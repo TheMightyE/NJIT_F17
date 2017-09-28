@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ISBN List / Top Shelf Productions</title>
+<link rel="stylesheet" href="//cdn.topshelfcomix.com/css/style.css" type="text/css" media="screen" />
+<!--[if lt IE 9]><script src="/scripts/html5shiv.js"></script><![endif]-->
+<style type="text/css" media="screen">
+body { background: #f9676d url(//cdn.topshelfcomix.com/img/bgs/thung2.png) top center no-repeat; } #footer p { color:#eee !important; } #footer a { color:#fded7f !important; }</style>
+<link rel="shortcut icon" href="/favicon.png" />
+<!--[if lte IE 7]><style> @import "/css/ie.css?v5"; </style><![endif]-->
+<meta name="viewport" content="width=960" />
+<meta name="description" value="Sophisticated Graphic Novels for the Modern Age" />
+<link rel="alternate" type="application/rss+xml" title="Top Shelf Productions News" href="http://feeds.feedburner.com/topshelf/news" />
+<link rel="alternate" type="application/rss+xml" title="Top Shelf Productions Blog" href="http://feeds.feedburner.com/heybartender" />
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-248215-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</head>
+
+<body id="catalog-page" class="">
+
+<header id="header">
+	<h1 id="logo"><a href="/">Top Shelf Productions</a></h1>
+	<form id="search-form" action="/search" method="get">
+		<input type="text" name="q" value="" id="q" />
+		<button type="submit" id="search" class="button">Search</button>
+	</form>
+
+	<ul id="nav" class="nospace">
+				<li id="nav-home"><a href="/">home</a></li>
+		<li class="active"id="nav-catalog"><a href="/catalog/">catalog</a></li>
+		<li id="nav-news"><a href="/news/">news</a></li>
+		<li id="nav-blog"><a href="/blog/">blog</a></li>
+		<li id="nav-contact"><a href="/contact/">contact</a></li>
+		<li id="nav-ts20"><a href="/ts2.0/">ts2.0</a></li>
+		<li id="nav-cart"><a href="/cart">cart</a></li>
+	</ul>
+
+	<div id="subnav">
+		<ul class="nospace" style="padding-left:10px;">
+<li><small>browse by:</small></li>
+<li class="droptitle" id="dropmenu-type"><a href="/catalog/categories">category</a></li><ul class="dropmenu hidden" id="dropmenu-type-menu"><li><a href="/catalog/special-deals">Special Deals</a></li><li><a href="/catalog/2017-releases">2017 Releases</a></li><li><a href="/catalog/future-releases">Future Releases</a></li><li><a href="/catalog/perennials">Perennials</a></li><li><a href="/catalog/kids-club">Kids Club</a></li><li><a href="/catalog/graphic-novels">Graphic Novels</a></li><li><a href="/catalog/comic-books">Comic Books</a></li><li><a href="/catalog/digital">Digital</a></li><li><a href="/catalog/sub-distro">Sub-Distro</a></li><li><a href="/catalog/merchandise">Merchandise</a></li><li class="spaced"><a href="/catalog/all">See All Products &rarr;</a></li></ul><li class="droptitle" id="dropmenu-category"><a href="/catalog/themes">theme</a></li><ul class="dropmenu hidden" id="dropmenu-category-menu"><li><a href="/catalog/action-adventure">Action/Adventure</a></li><li><a href="/catalog/adults-only">Adults Only</a></li><li><a href="/catalog/all-ages-kids-club">All-Ages/Kids Club</a></li><li><a href="/catalog/autobio">Autobio</a></li><li><a href="/catalog/coming-of-age">Coming of Age</a></li><li><a href="/catalog/drama">Drama</a></li><li><a href="/catalog/erotica">Erotica</a></li><li><a href="/catalog/history">History</a></li><li><a href="/catalog/humor">Humor</a></li><li><a href="/catalog/manga">Manga</a></li><li><a href="/catalog/mature-reader">Mature Reader</a></li><li><a href="/catalog/political">Political</a></li><li><a href="/catalog/sci-fi">Sci-Fi</a></li><li><a href="/catalog/superheroes">Superheroes</a></li><li><a href="/catalog/surreal-experimental">Surreal/Experimental</a></li><li><a href="/catalog/thriller">Thriller</a></li><li><a href="/catalog/young-adult">Young Adult</a></li></ul><li class="droptitle" id="dropmenu-artist"><a href="/catalog/artists">artist</a></li><ul class="dropmenu hidden" id="dropmenu-artist-menu"><li><a href="/catalog/alan-moore">Alan Moore</a></li><li><a href="/catalog/alex-robinson">Alex Robinson</a></li><li><a href="/catalog/andrew-aydin">Andrew Aydin</a></li><li><a href="/catalog/christian-slade">Christian Slade</a></li><li><a href="/catalog/congressman-john-lewis">Congressman John Lewis</a></li><li><a href="/catalog/eddie-campbell">Eddie Campbell</a></li><li><a href="/catalog/james-kochalka">James Kochalka</a></li><li><a href="/catalog/jeff-lemire">Jeff Lemire</a></li><li><a href="/catalog/jeffrey-brown">Jeffrey Brown</a></li><li><a href="/catalog/jess-fink">Jess Fink</a></li><li><a href="/catalog/kevin-oneill">Kevin O'Neill</a></li><li><a href="/catalog/liz-prince">Liz Prince</a></li><li><a href="/catalog/mark-russell">Mark Russell</a></li><li><a href="/catalog/nate-powell">Nate Powell</a></li><li><a href="/catalog/robert-venditti">Robert Venditti</a></li><li><a href="/catalog/shannon-wheeler">Shannon Wheeler</a></li><li class="spaced"><a href="/catalog/artists">See All &rarr;</a></li></ul><li id="kids-club-link"><a href="/catalog/kids-club">kids club</a></li><li id="digital-link"><a href="/catalog/digital">digital</a></li><li id="returns-policy-link"><a href="/catalog/returns-policy">returns</a></li><li id="isbn-list-link"><a href="/catalog/isbn-list">isbn list</a></li></ul>	</div>
+</header>
+
+<div id="wrapper">
+<div id="crumb-wrapper"><div id="crumb"><a href="/catalog/">Catalog</a> <i>/</i> ISBN List</div></div>
+<div id="main">
+
+<div id="content"><div id="isbn-list">
+<div class="intro">	<p>In an effort to help LIBRARIANS know which collection to put each graphic novels into, we've included a (conservative) "recommended age" listing for each title. In general though, we feel that most of our titles are appropriate for everyone.
+</p>
+</div><div class="isbn-group">
+<div class="isbn-titles"><span class="isbn-number">ISBN</span> <span class="isbn-age">RECOMMENDED AGE</span> <span class="isbn-info">TITLE, AUTHOR, PRICE</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-75-4</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/110-per-cent/467">110 Per¢</a> by Tony Consiglio, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-050-6</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-120-days-of-simon/648">The 120 Days of Simon</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-266-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/a-matter-of-life/839">A Matter of Life</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-71-6</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/aeiou-or-any-easy-intimacy/464">AEIOU or Any Easy Intimacy</a> byJeffrey Brown, $12.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-025-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/alec-the-years-have-pants/618">Alec: The Years Have Pants</a>, $35.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-047-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/alec-the-years-have-pants-hardcover/643">Alec: The Years Have Pants -- HARDCOVER</a>, $49.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-322-4</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/alone-forever/872">Alone Forever</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-85-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/american-elf-book-2/523">American Elf (Book 2)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-016-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/american-elf-book-3/601">American Elf (Book 3)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-265-4</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/american-elf-book-4/799">American Elf (Book 4)</a>, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-2395</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/american-elf-1999/810">American Elf 1999</a> by James Kochalka, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-077-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/any-empire/734">Any Empire</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-369-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/apocrypha-now/932">Apocrypha Now</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-069-8</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/august-moon/726">August Moon</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-042-1</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/ax-vol-1-a-collection-of-alternative-manga/645">Ax (Vol 1): A Collection of Alternative Manga</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-026-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bacchus-omnibus-edition-volume-one/619">Bacchus (Omnibus Edition): Volume One</a>, $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">9781603094054</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bacchus-omnibus-edition-volume-one-signed-numbered-hc/927">Bacchus (Omnibus Edition): Volume One -- SIGNED & NUMBERED HC</a>, $75.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-027-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bacchus-omnibus-edition-volume-two/934">Bacchus (Omnibus Edition): Volume Two</a>, $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-405-4</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bacchus-omnibus-edition-volume-two-signed-numbered-hc/942">Bacchus (Omnibus Edition): Volume Two -- SIGNED & NUMBERED HC</a>, $75.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-37-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-barefoot-serpent-softcover/200">The Barefoot Serpent (softcover)</a> by Scott Morse, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-029-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bb-wolf-and-the-3-lps/620">BB Wolf and the 3 LP's</a>, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-40-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/beach-safari/181">Beach Safari</a> by Mawil, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-56-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bighead/401">Bighead</a> by Jeffrey Brown, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-273-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/blue/772">Blue</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-063-6</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-bojeffries-saga/871">The Bojeffries Saga</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-19-8</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison/2">Box Office Poison</a> by Alex Robinson, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 82771401218700111</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison-color-comics-1/967">Box Office Poison Color Comics #1</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 82771401218700311</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison-color-comics-3/969">Box Office Poison Color Comics #3</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC: 82771401218700211</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison-color-comics-2/968">Box Office Poison Color Comics #2</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 82771401218700411</span> <span class="isbn-age">MATURE (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison-color-comics-4/970">Box Office Poison Color Comics #4</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 82771401218700511</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/box-office-poison-color-comics-5/971">Box Office Poison Color Comics #5</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9858751-3-8</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/burning-building-comix/846">Burning Building Comix</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-066-7</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/chester-5000-xyv/721">Chester 5000 (Book 1)</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-936561-69-8</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/chester-5000-book-2-isabelle-george/954">Chester 5000 (Book 2): Isabelle & George</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-382-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/cigarette-girl/940">Cigarette Girl</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9713597-6-5</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/clumsy/180">Clumsy</a> by Jeffrey Brown, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-100-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/crater-xv/833">Crater XV</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-81-5</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/cry-yourself-to-sleep/518">Cry Yourself to Sleep</a> by Jeremy Tinder, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-271-5</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/dear-beloved-stranger/822">Dear Beloved Stranger</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-12-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/dear-julia/18">Dear Julia,</a> by Brian Biggs, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-92-1</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/death-by-chocolate-redux/564">Death by Chocolate - Redux</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-012-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/delayed-replays/605">Delayed Replays</a>, $7.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-057-5</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/dragon-puncher-vol-1/660">Dragon Puncher (Book 1)</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-085-8</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/dragon-puncher-book-2-island/748">Dragon Puncher (Book 2): Island</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-387-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/eddie-campbells-omnibox-the-complete-alec-and-bacchus-3-volume-slipcase/941">Eddie Campbell's Omnibox: The Complete ALEC and BACCHUS (3 Volume Slipcase)</a>, $99.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-038-4</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/essex-county/640">Essex County</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-77-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/every-girl-is-the-end-of-the-world-for-me/519">Every Girl is the End of the World for Me</a> by Jeffrey Brown, $8.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-036-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/far-arden/636">Far Arden</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-375-0</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/fear-and-loathing-in-las-vegas/919">Fear and Loathing in Las Vegas</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">827714010046</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/fear-and-loathing-in-las-vegas-signed-and-numbered-edition/949">Fear and Loathing in Las Vegas -- SIGNED AND NUMBERED EDITION</a>, $50.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-053-7</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/fingerprints/654">Fingerprints</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-97-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/fox-bunny-funny/573">Fox Bunny Funny</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9585783-4-9</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/from-hell-softcover/226">From Hell</a> by Alan Moore & Eddie Campbell, $35.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-397-2</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/from-hell-hardcover/542">From Hell -- HARDCOVER</a>, $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-374-3</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/from-hell-from-hell-companion-slipcase/924">From Hell / From Hell Companion Slipcase</a>, $49.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-303-3</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-from-hell-companion/837">The From Hell Companion</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-344-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-fun-family/935">The Fun Family</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-080-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/gingerbread-girl/737">Gingerbread Girl</a>, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-386-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/god-is-disappointed-apocrypha-now-slipcase/939">God is Disappointed / Apocrypha Now — SLIPCASE SET</a>, $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-098-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/god-is-disappointed-in-you/765">God Is Disappointed in You</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714011456</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/gumballs-1/952">Gumballs #1</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714011456 </span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/gumballs-2/957">Gumballs #2</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714011456</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/gumballs-3/981">Gumballs #3</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-301-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/heck/834">Heck</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-407-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/her-bark-and-her-bite/955">Her Bark and Her Bite</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-051-3</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hey-princess/650">Hey Princess</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-02-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hey-mister-vol-1-after-school-spec/13">Hey, Mister (Vol 1): After School Special</a> by Sickman-Garner, $7.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-25-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hey-mister-vol-3-the-fall-collection/15">Hey, Mister (Vol 3): The Fall Collection</a> by S-Garner, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-030-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hey-mister-come-hell-or-highwater-pants/621">Hey, Mister: Come Hell or Highwater Pants</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-008-7</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hieronymus-b/604">Hieronymus B.</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-412-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/home-time-book-one/958">Home Time: Under the River</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-024-7 </span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-homeland-directive/723">The Homeland Directive</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-17-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hutch-owen-vol-1-the-collected/16">Hutch Owen (Vol 1): The Collected</a> by Tom Hart, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-55-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hutch-owen-vol-2-unmarketable/399">Hutch Owen (Vol 2): Unmarketable</a> by Tom Hart, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-086-5</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/hutch-owen-vol-3-lets-get-furious/749">Hutch Owen (Vol 3): Let's Get Furious!</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-86-0</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/i-am-going-to-be-small/527">I Am Going to Be Small</a>, $14.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-91-4</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/incredible-change-bots/562">Incredible Change-Bots One</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-067-4</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/incredible-change-bots-two/722">Incredible Change-Bots Two</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-348-4</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/incredible-change-bots-two-point-something-something/887">Incredible Change-Bots Two Point Something Something</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-83-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/infinite-kung-fu/574">Infinite Kung Fu</a>, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-388-0</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-jekyll-island-chronicles-book-one-machine-age-war/933">The Jekyll Island Chronicles (Book One): A Machine Age War</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-013-1</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-1-the-best-little-ghost/594">Johnny Boo (Book 1): The Best Little Ghost</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-015-5</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-2-twinkle-power/606">Johnny Boo (Book 2): Twinkle Power</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-041-4</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-3-happy-apples/644">Johnny Boo (Book 3): Happy Apples</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-059-9</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-4-the-mean-little-boy/714">Johnny Boo (Book 4): The Mean Little Boy</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-084-1</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-5-does-something/747">Johnny Boo (Book 5): Does Something!</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">9781603093491</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-6-zooms-to-the-moon/888">Johnny Boo (Book 6): Zooms to the Moon!</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-384-2</span> <span class="isbn-age">All ages (4-8+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-7-goes-like-this/931">Johnny Boo (Book 7): Goes Like This!</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">9781603093682</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-meets-dragon-puncher/915">Johnny Boo Meets Dragon Puncher!</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-385-9</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-big-boo-box-slipcase-books-1-5/938">Johnny Boo's Big Boo Box (Slipcase Set of Books 1-5)</a> All ages (4-8+), $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-99-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/junction-true/563">Junction True</a> Mature Reader (16+), $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-65-5</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-king-softcover/433">The King</a> by Rich Koslowski, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9905208-0-1</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/knight-takes-queen/912">Knight Takes Queen</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-90-7</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/korgi-book-1-sprouting-wings/546">Korgi (Book 1): Sprouting Wings!</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-010-0</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/korgi-book-2-the-cosmic-collector/602">Korgi (Book 2): The Cosmic Collector</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-062-9</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/korgi-book-3-a-hollow-beginning/715">Korgi (Book 3): A Hollow Beginning</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-403-0</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/korgi-book-4-the-problem-with-potions/948">Korgi (Book 4): The Problem with Potions</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714013139</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/korgi-short-tails/972">Korgi: Short Tails</a>, $4.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-000-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-of-extraordinary-gentlemen-vol-iii-century-1/583">The League of Extraordinary Gentlemen (Vol III): Century #1 - 1910</a>, $7.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-006-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-of-extraordinary-gentlemen-vol-iii-century-2/635">The League of Extraordinary Gentlemen (Vol III): Century #2 - 1969</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-007-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-of-extraordinary-gentlemen-vol-iii-century-3/637">The League of Extraordinary Gentlemen (Vol III): Century #3 - 2009</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-329-3</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-century-hardcover/885">The League of Extraordinary Gentlemen (Vol III): Century - HARDCOVER</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-354-5</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-leg/894">The Leg</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-51-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/less-than-heroes/392">Less Than Heroes</a> by David Yurkovich, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-070-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/liars-kiss/728">Liar's Kiss</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-69-3</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lone-racer/463">Lone Racer</a> by Nicolas Mahler, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-154-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lost-dogs/773">Lost Dogs</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-044-5</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lost-girls-single-volume-hardcover-edition/219">Lost Girls (Single-Volume Hardcover Edition)</a> by Alan Moore & Melinda Gebbie, $45.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-393-4</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/love-addict-confessions-of-a-serial-dater/944">Love Addict: Confessions of a Serial Dater</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-152-7</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lovely-horrible-stuff/797">The Lovely Horrible Stuff</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-009-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lower-regions/596">Lower Regions</a>, $6.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-073-5</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lucille/730">Lucille</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-072-8</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/maddy-kettle-book-1-the-adventure-of-the-thimblewitch/729">Maddy Kettle (Book 1): The Adventure of the Thimblewitch</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-33-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/magic-boy-and-the-robot-elf/179">Magic Boy and the Robot Elf</a> by James Kochalka, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 094922943705</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-man-who-loved-breasts/624">The Man Who Loved Breasts</a>, $4.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-395-8</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-trilogy-slipcase-set/947">March (Trilogy Slipcase Set)</a>, $49.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-300-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-one/760">March: Book One</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-390-3</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-one-hardcover/892">March: Book One -- HARDCOVER</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-383-5</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-one-oversized-hardcover-edition/936">March: Book One -- OVER-SIZED DELUXE HARDCOVER EDITION</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-400-9</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-two/896">March: Book Two</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-408-5</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-two-hardcover/897">March: Book Two -- HARDCOVER</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-402-3</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-three/945">March: Book Three</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-396-5</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/march-book-three-hardcover/946">March: Book Three -- HARDCOVER</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-333-0</span> <span class="isbn-age">Young Adult (11+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/martin-luther-king-and-the-montgomery-story/876">Martin Luther King and The Montgomery Story</a>, $5.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-45-7</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-mirror-of-love/206">The Mirror of Love</a> by Alan Moore and José Villarrubia, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-36-5</span> <span class="isbn-age">All Ages (10+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/monkey-vs-robot-vol-2-crystal-of-power/183">Monkey vs. Robot (Vol 2): Crystal of Power</a> by Koch., $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-075-9</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/monster-on-the-hill/732">Monster on the Hill (Book 1)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-68-6</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/mosquito/461">Mosquito</a> by Dan James, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-370-5</span> <span class="isbn-age">Teen (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/motorcycle-samurai-volume-one/917">The Motorcycle Samurai (Volume One)</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-359-0</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/motorcycle-samurai-fcbd-2015/913">The Motorcycle Samurai -- FCBD 2015</a>, $1.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-049-0</span> <span class="isbn-age"> Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/moving-pictures/647">Moving Pictures</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-409-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/nate-powells-omnibox/959">Nate Powell's OMNIBOX</a>, $59.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-381-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/nemo-trilogy-slipcase-edition/926">Nemo Trilogy (Slipcase Edition)</a>, $39.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-274-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/nemo-heart-of-ice/820">Nemo: Heart of Ice</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-355-2 </span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/nemo-river-of-ghosts/899">Nemo: River of Ghosts</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-320-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/nemo-the-roses-of-berlin/875">Nemo: The Roses of Berlin</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-068-1</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/okie-dokie-donuts-book-1/724">Okie Dokie Donuts (Story 1): Open for Business!</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-377-4</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/our-expanding-universe/921">Our Expanding Universe</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-29-7</span> <span class="isbn-age">All Ages (10+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pinky-stinky/57">Pinky & Stinky</a> by James Kochalka, $15.00</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714009026</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pinocchio-vampire-slayer-vs-the-vampire-zoo/930">Pinocchio Vampire Slayer vs The Vampire Zoo</a>, $3.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-347-7</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pinocchio-vampire-slayer/884">Pinocchio, Vampire Slayer</a>, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">9781603093255</span> <span class="isbn-age">&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pinocchio-vampire-slayer-vol-2-the-great-puppet-theater/883">Pinocchio, Vampire Slayer (Vol. 2): The Great Puppet Theater</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-071-1</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pirate-penguin-vs-ninja-chicken-book-1/727">Pirate Penguin vs Ninja Chicken (Book 1): Troublems with Frenemies</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-367-5</span> <span class="isbn-age">All Ages (9-12+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/pirate-penguin-vs-ninja-chicken-book-2-escape-from-skull-fragment-island/922">Pirate Penguin vs Ninja Chicken (Book 2): Escape from Skull-Fragment Island!</a>, $14.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-056-8</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-playwright/661">The Playwright</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-304-0</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/renee/840">Renée</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-413-9</span> <span class="isbn-age">All Ages (8+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/return-of-the-dapper-men-deluxe-edition/961">Return of the Dapper Men (Deluxe Edition)</a>, $34.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-089-6</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/scene-but-not-heard/842">Scene But Not Heard</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-037-7</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/second-thoughts-/638">Second Thoughts </a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-410-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/sht-my-president-says-the-illustrated-tweets-of-donald-j-trump/980">Sh*t My President Says: The Illustrated Tweets of Donald J. Trump</a>, $14.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-414-6</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/spacebat-and-the-fugitives-book-one-tacos-at-the-end-of-the-world/962">Spacebat and the Fugitives (Book One): Tacos at the End of the World</a>, $14.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-14-3</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/speechless/5">Speechless</a> by Peter Kuper, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-50-1</span> <span class="isbn-age">All Ages (10+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/spiral-bound/295">Spiral-Bound</a> by Aaron Renier, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-054-4</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-story-of-my-tits/655">The Story of My Tits </a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-692-24618-4</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/strong-female-protagonist-book-one/910">Strong Female Protagonist (Book One)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-020-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/sulk-vol-1-bighead-and-friends/616">Sulk (Vol 1): Bighead and Friends</a>, $7.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-031-5</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/sulk-vol-2-deadly-awesome/617">Sulk (Vol 2): Deadly Awesome</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-055-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/sulk-vol-3-the-kind-of-strength/659">Sulk (Vol 3): The Kind of Strength...</a>, $6.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-96-9</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/super-spy/571">Super Spy</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-043-8</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/super-spy-vol-2-the-lost-dossiers/646">Super Spy (Vol 2): The Lost Dossiers</a>, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-052-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/superfckers/653">SuperF*ckers</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">9781684050895</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/superfckers-forever/991">Superf*ckers Forever</a>, $17.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-411-5</span> <span class="isbn-age">All Ages (8+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/surfside-girls-book-one-the-secret-of-danger-point/960">Surfside Girls (Book One): The Secret of Danger Point</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-87-7</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-surrogates-vol-1/528">The Surrogates (Vol 1)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-018-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-surrogates-vol-2-flesh-and-bone/612">The Surrogates (Vol 2): Flesh and Bone</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-045-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-surrogates-owners-manual/656">The Surrogates Owner's Manual</a>, $39.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-258-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/surrogates-case-files-1/811">The Surrogates: Case Files #1</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-033-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/swallow-me-whole/567">Swallow Me Whole</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-84-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tales-of-woodsman-pete/524">Tales of Woodsman Pete</a>, $7.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-005-6</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/that-salty-air/575">That Salty Air</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-31-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/three-fingers/58">Three Fingers</a> by Rich Koslowski, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-70-9</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-ticking/221">The Ticking</a> by Renée French, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-350-7</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tim-ginger/918">Tim Ginger</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9801023-6-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tonoharu-part-one/610">Tonoharu (Part One)</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9801023-3-8</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tonoharu-part-two/742">Tonoharu (Part Two)</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-9801023-1-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tonoharu-part-three/951">Tonoharu (Part Three)</a>, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-98-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/too-cool-to-be-forgotten/565">Too Cool to Be Forgotten</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-04-4</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/top-shelf-7-on-parade/25">Top Shelf #7: On Parade</a> Edited by Warnock, $6.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-11-2</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/top-shelf-8-under-the-big-top/34">Top Shelf #8: Under the Big Top</a> by Brett Warnock, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-32-7</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/top-shelf-9-asks-the-big-questions/186">Top Shelf #9: Asks the Big Questions</a> Edited by Warnock, $24.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-332-3</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/top-shelf-kids-club-2014-fcbd/886">Top Shelf Kids Club -- 2014 (FCBD)</a>, $0.50</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-73-0</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/tricked/222">Tricked</a> by Alex Robinson, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-061-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-troll-king/711">The Troll King</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-058-2</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/undeleted-scenes/712">Undeleted Scenes</a>, $15.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-392-7</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/underwater-welder-hardcover/943">The Underwater Welder - HARDCOVER</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-398-9</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/underwater-welder-signed-numbered-hardcover-the/950">The Underwater Welder - SIGNED & NUMBERED HARDCOVER</a>, $49.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-074-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-underwater-welder/731">The Underwater Welder</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-076-6</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/underwire/733">Underwire</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-150-3</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/unearthing-oversized-hardcover/807">Unearthing (Oversized Hardcover)</a>, $74.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-151-0</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/unearthing-softcover/806">Unearthing (Softcover)</a>, $29.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-41-9</span> <span class="isbn-age">Mature (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/unlikely/196">Unlikely</a> by Jeffrey Brown, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-088-9</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/upside-down/736">Upside Down (Book 1): A Vampire Tale</a>, $9.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-371-2</span> <span class="isbn-age">All Ages (9-12+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/upside-down-book-2-a-hat-full-of-spells/920">Upside Down (Book 2): A Hat Full of Spells</a>, $14.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-38-9</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/van-helsings-night-off/207">Van Helsing's Night Off</a> by Nicolas Mahler, $12.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-003-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/veeps/579">Veeps</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-035-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/voice-of-the-fire/198">Voice of the Fire</a> by Alan Moore with José Villarrubia, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-065-0</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/we-can-fix-it/720">We Can Fix It!</a>, $14.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-72-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/will-you-still-love-me-if-i-wet-the-bed/465">Will You Still Love Me If I Wet the Bed</a> by Liz Prince, $7.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-097-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/wizzywig/764">Wizzywig</a>, $19.95</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-373-6</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/world-war-3-illustrated-46/923">World War 3 Illustrated #46</a>, $7.00</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-014-8</span> <span class="isbn-age">All Ages&nbsp;</span> <span class="isbn-info"> <a href="/catalog/yam/603">Yam</a>, $10.00</span></div>
+<div class="isbn-item"><span class="isbn-number">9781603093668</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/you-dont-say/914">You Don't Say</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-406-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/you-might-be-an-artist-if-/953">You Might Be An Artist If ...</a>, $19.99</span></div>
+<div class="spacer">&nbsp;</div></div>
+
+<h3 class="isbn-header">COMING SOON</h3>
+<div class="isbn-group">
+<div class="isbn-titles"><span class="isbn-number">ISBN</span> <span class="isbn-age">RECOMMENDED AGE</span> <span class="isbn-info">TITLE, AUTHOR, PRICE</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-420-7</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/bottled/973">Bottled</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-422-1</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/catnbat/975">Cat'n'Bat</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-425-2</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/cloud-hotel/978">Cloud Hotel</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-427-6</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/coin-op-comics/983">Coin-Op Comics</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-428-3</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/come-again/986">Come Again</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-891830-82-2</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/kissypoo-garden/572">Doot Doot</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-431-3</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/gumballs-tpb/988">Gumballs (TPB)</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-429-0</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/his-dream-of-the-skyland-the-walled-city-trilogy-book-one/990">His Dream of the Skyland: The Walled City Trilogy (Book One)</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-419-1</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/i-am-a-number/965">I Am a Number</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-426-9</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/jekyll-island-chronicles-book-two-a-devils-reach-the/979">The Jekyll Island Chronicles (Book Two): A Devil's Reach</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-435-1</span> <span class="isbn-age">All ages (4-8+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/johnny-boo-book-8-johnny-boo-and-the-ice-cream-computer/985">Johnny Boo (Book 8): Johnny Boo and the Ice Cream Computer</a>, $9.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-437-5</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-of-extraordinary-gentlemen-the-vol-iii-century-tpb/992">The League of Extraordinary Gentlemen (Vol III): Century (TPB)</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">UPC 827714014280 00111</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/league-of-extraordinary-gentlemen-the-vol-iv-the-tempest-1-of-6/982">The League of Extraordinary Gentlemen (Vol IV): The Tempest #1 (of 6)</a>, $4.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-434-4</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/look-back-and-laugh/987">Look Back and Laugh</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-436-8</span> <span class="isbn-age">Adults Only (18+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/lost-girls-expanded-edition/993">Lost Girls (Expanded Edition)</a>, $49.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-423-8</span> <span class="isbn-age">Mature Reader (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/mechaboys/976">Mechaboys</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-001-8</span> <span class="isbn-age">Young Adult (13+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-moon-and-serpent-bumper-book-of-magic/578">The Moon and Serpent Bumper Book of Magic</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-417-7</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/roots/963">Roots</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-079-7</span> <span class="isbn-age">FOR ADULTS ONLY&nbsp;</span> <span class="isbn-info"> <a href="/catalog/small-favors-omnibus/738">Small Favors (Omnibus)</a>, TBD</span></div>
+<div class="isbn-item"><span class="isbn-number">978-0-692-90610-1</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/strong-female-protagonist-book-two/984">Strong Female Protagonist (Book Two)</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-418-4</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/super-tokyoland/964">Super Tokyoland</a>, $24.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-432-0</span> <span class="isbn-age">Mature Readers (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/teenage-mutant-ninja-turtles-bodycount/989">Teenage Mutant Ninja Turtles BODYCOUNT</a>, $29.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-415-3</span> <span class="isbn-age">Mature (16+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/the-three-rooms-in-valeries-head/966">The Three Rooms in Valerie's Head</a>, $19.99</span></div>
+<div class="isbn-item"><span class="isbn-number">978-1-60309-424-5</span> <span class="isbn-age">Middle-Grade (10+)&nbsp;</span> <span class="isbn-info"> <a href="/catalog/wards-valley/977">Ward's Valley</a>, $19.99</span></div>
+<div class="spacer">&nbsp;</div></div>
+
+</div>
+
+</div><!-- END #content --><div id="sidebar"><div class="sidebox app-banner-small" style="margin:20px 0 20px; width:275px; background:#fff;"><a href="/catalog/digital/topshelfdrmfree"><img src="//cdn.topshelfcomix.com/img/app-banner-drm-sm.png"></a></div><div class="featured featured-books"><h2 class="top">Featured Books</h2><div class="feature-wrap"><div class="mask"><div class="slide"><div class="feature"><a href="/catalog/bottled/973"><img id="product-image" src="//cdn.topshelfcomix.com/catalog/covers/bottled_cover_sm.jpg" alt="Bottled" /></a><h3><a href="/catalog/bottled/973">Bottled</a></h3><p class="by">by <a href="/catalog/chris-gooch">Chris Gooch</a></p>
+<div class="actions"> <p class="price">$19.99 <i>(US)</i></p><a class="button ajaxcart preorder" id="addtocart-973-vr0f6" href="/cart/?additem=973">Pre-Order</a>  </div></div><div class="feature"><a href="/catalog/roots/963"><img id="product-image" src="//cdn.topshelfcomix.com/catalog/covers/roots_cover_sm.jpg" alt="Roots" /></a><h3><a href="/catalog/roots/963">Roots</a></h3><p class="by">by <a href="/catalog/tara-oconnor">Tara O'Connor</a></p>
+<div class="actions"> <p class="price">$19.99 <i>(US)</i></p><a class="button ajaxcart preorder" id="addtocart-963-i20mq" href="/cart/?additem=963">Pre-Order</a>  </div></div><div class="feature"><a href="/catalog/super-tokyoland/964"><img id="product-image" src="//cdn.topshelfcomix.com/catalog/covers/super_tokyoland_cover_sm_copy0.jpg" alt="Super Tokyoland" /></a><h3><a href="/catalog/super-tokyoland/964">Super Tokyoland</a></h3><p class="by">by <a href="/catalog/benjamin-reiss">Benjamin Reiss</a></p>
+<div class="actions"> <p class="price">$24.99 <i>(US)</i></p><a class="button ajaxcart preorder" id="addtocart-964-5ejk5" href="/cart/?additem=964">Pre-Order</a>  </div></div><div class="feature"><a href="/catalog/i-am-a-number/965"><img id="product-image" src="//cdn.topshelfcomix.com/catalog/covers/i_am_a_number_cover_sm.jpg" alt="I Am a Number" /></a><h3><a href="/catalog/i-am-a-number/965">I Am a Number</a></h3><p class="by">by <a href="/catalog/rian-hughes">Rian Hughes</a></p>
+<div class="actions"> <p class="price">$19.99 <i>(US)</i></p><a class="button ajaxcart preorder" id="addtocart-965-3u40z" href="/cart/?additem=965">Pre-Order</a>  </div></div><div class="feature"><a href="/catalog/march-trilogy-slipcase-set/947"><img id="product-image" src="//cdn.topshelfcomix.com/catalog/covers/march3dslipcase.jpg" alt="March (Trilogy Slipcase Set)" /></a><h3><a href="/catalog/march-trilogy-slipcase-set/947">March (Trilogy Slipcase Set)</a></h3><p class="by">by <a href="/catalog/congressman-john-lewis">Congressman John Lewis</a>, <a href="/catalog/andrew-aydin">Andrew Aydin</a>, and <a href="/catalog/nate-powell">Nate Powell</a></p><div class="actions"> <p class="price">$49.99 <i>(US)</i></p><a class="button ajaxcart" id="addtocart-947-94jfe" href="/cart/?additem=947">Add to Cart</a>  </div></div></div></div></div><div class="spacer">&nbsp;</div></div><h2 class="news">Recent News <a class="rss-icon" href="http://feeds.feedburner.com/topshelf/news">RSS</a></h2><div class="recent-news sidebox"><ul class="nospace"><div class="news">
+<li></a> <a href="/news/1088">SPX 2017 Marks 20 Years of Top Shelf! <span class="date">September 14, 2017</span></a></li><li class="clearleft"><a href="/news/1087"><em>Sh*t My President Says</em> breaks the internet! <span class="date">August 15, 2017</span></a></li><li class="clearleft"><a href="/news/1086">Alan Moore & Kevin O'Neill present The League of Extraordinary Gentlemen, Volume IV: THE TEMPEST <span class="date">July 20, 2017</span></a></li><li class="clearleft"><a href="/news/1085">Top Shelf brings an incredible lineup of old friends & new faces to San Diego Comic-Con 2017! <span class="date">July 18, 2017</span></a></li><li class="clearleft"><a href="/news/1084">Welcome to SUPER TOKYOLAND and I AM A NUMBER! <span class="date">July 6, 2017</span></a></li><div class="spacer">&nbsp;</div></div></ul></div><h2 class="blog"><a href="/blog/">Hey Bartender! <small class="caps quiet">The Top Shelf Blog</small></a> <a class="rss-icon" href="http://feeds.feedburner.com/heybartender">RSS</a></h2><div class="blog-sidebar sidebox"><div class="blog">
+<div class="news-post short"><h2 class="news-title"><a href="/blog/998">Humbled and honored... </a></h2>
+<p class="date">January 6, 2015 / <a href="/blog/998">More &rarr;</a></p><a href="/news/998"></a><div class="news-teaser">	Oh my, i really can't believe the love and support that is coming in for your loyal bartender.
+	On the news of iDW acquiring Top Shelf, i have to say that these cats are aces. I've known Chris Ryall &hellip;</div><p class="news-more"><a href="/blog/998" class="button">Read the Blog &rarr;</a></p></div>
+
+<div class="spacer">&nbsp;</div></div></div></div><!-- END #sidebar -->
+<div class="spacer">&nbsp;</div>
+</div><!-- END #main -->
+</div><!-- END #wrapper -->
+
+
+	<div id="footer">
+		<div id="social">
+			<a target="_blank" href="http://twitter.com/#!/topshelfcomix" title="Follow Top Shelf on Twitter"><img src="//cdn.topshelfcomix.com/img/twitter.png" alt="twitter" /></a>
+			<a target="_blank" href="http://www.facebook.com/topshelfcomix" title="Friend Top Shelf on Facebook"><img src="//cdn.topshelfcomix.com/img/facebook.png" alt="facebook" /></a>
+			<a target="_blank" href="http://www.youtube.com/topshelfcomix" title="Watch Top Shelf videos on YouTube"><img src="//cdn.topshelfcomix.com/img/youtube.png" alt="youtube" /></a>
+		</div>
+		<a target="_blank" id="clixel" href="http://clixel.com/"><img src="//cdn.topshelfcomix.com/img/clixel.gif" alt="Site by Clixel" /></a>
+		<img class="floatright" id="payments-accepted" src="//cdn.topshelfcomix.com/img/payment-options-icons.png" alt="paypal, visa, amex, discover accepted" />
+				<p id="mobile-switch">Full Site &nbsp; <a href="/mobile/catalog/isbn-list?mobile=on">Go to Mobile Site</a></p>
+				<p>Background by <a target="_blank" href="http://www.dianathung.com/">Diana Thung</a>. Top Shelf Productions&reg; and the Top Shelf logo are registered trademarks of Top Shelf Productions, Inc. All rights reserved.</p>
+	</div>
+	<!-- page executed in 0.02896 secs, 23 db queries -->
+
+<script src="//cdn.topshelfcomix.com/scripts/main-min.js" type="text/javascript"></script>
+<script src="//cdn.topshelfcomix.com/scripts/shadowbox.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+	window.addEvent('domready',function(){
+		if ($('preview')) {
+			$('preview').addEvent('click', function(e) {
+				e.stop();
+				if ($('lg-image')) $('lg-image').fireEvent('click', e); /* hey mister vol.3 had no cover blowup */
+				else $('main').getElement('a.lightbox').fireEvent('click', e);
+			});
+			// if no large image but preview, make product image open preview
+			if (!$('lg-image')) {
+				$('product-image').setStyle('cursor', 'pointer');
+				$('product-image').addEvent('click', function(e) {
+					$('main').getElement('a.lightbox').fireEvent('click', e);
+				});
+			}
+		}
+	});
+	Shadowbox.init({
+			animate:false,
+			animateFade:false,
+			resizeDuration:.15,
+			displayNav:true,
+			overlayColor:"#001705",
+			overlayOpacity:".8"
+	});
+</script>
+</body>
+</html>

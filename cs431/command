@@ -1,0 +1,1 @@
+grep -o $exp books.html | grep -o ">[A-Za-z].*[A-Za-z]</span>" | grep -o "[A-Z].*<" | grep -o "[A-Z].*[A-Za-z]"
