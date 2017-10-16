@@ -1,0 +1,27 @@
+						| F F F F F F F F 
+
+            	\0	!	d	a	| 7 7  9 d a 2 e e
+            	m	E	\0	s	| 7 7  9 d a 2 e a
+            	i	\0	e	m	| 7 7  9 d a 2 e 6
+            	a	n	\0	y	| 7 7  9 d a 2 e 2
+            	m	\0	o	l	| 7 7  9 d a 2 d e
+            	l	l	e	h	| 7 7  9 d a 2 d a
+            	\0	p	a	m	| 7 7  9 d a 2 d 6
+            	e	m	/	.	| 7 7  9 d a 2 d 2
+            ----------------------------------	
+            ----------------------------------
+            ----------------------------------
+Argv 5		77	9d	a2	ec	| 7 7 9 d 8 f d 0
+Argv 4 		77	9d	a2	e9	| 7 7 9 d 8 f c 8
+Argv 3		77	9d	a2	e4	| 7 7 9 d 8 f c 0
+Argv 2		77	9d	a2	e1	| 7 7 9 d 8 f b 8
+Argv 1		77	9d	a2	da	| 7 7 9 d 8 f b 0
+Argv 0		77	9d	a2	d2	| 7 7 9 d 8 f a 8
+
+
+Argc		00	00	00	06	| 7 7 9 d 8 e a c
+Argv		77	9d	8f	a8	| 7 7 9 d 8 e a 0
+		
+						| 0 0 0 0 0 0 0 0 
+		value				| address
+ 

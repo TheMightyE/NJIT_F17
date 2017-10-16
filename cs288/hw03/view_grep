@@ -1,5 +1,0 @@
---get views--
-e="\([0-9,]\+\)\sviews"
-grep  -o $e index.html | grep -o "\([0-9,]\+\)" | sort -rn
-
-
