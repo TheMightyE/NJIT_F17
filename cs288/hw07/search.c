@@ -90,6 +90,18 @@ int main(int argc,char **argv) {
 
 int toggle_dir(int dir){
   int opp_dir;
+  
+  if (dir == UP)
+    opp_dir = DN;
+  else if (dir == DN)
+    opp_dir = UP;
+  else if (dir == LT)
+    opp_dir = RT;
+  else if (dir == RT)
+    opp_dir = LT;
+  else
+    opp_dir = UK;
+  
   // return opp direction
   return opp_dir;
 }
@@ -98,7 +110,7 @@ void print_path(int n,int *path){
   int i,p;
   //  for (i=0;i<n;i++) path[i] = path_buf[path_cnt-i-1];
   //  for (i=0;i<path_cnt;i++) printf("%d ",path[i]); printf("\n");
-  //  printf("entering print_path: n=%d\n",n);
+  printf("entering print_path: n=%d\n",n);
 
   ////  for (i=n-1;i>=0;i--) printf("%d ",*(path+i)); printf("\n");
   for (i=n-1;i>=0;i--) {
@@ -129,6 +141,7 @@ void find_path(struct node *cp,struct node *opnp,struct node *cldp){
 
 void find_parent(struct node *cp,int prev_dir){
   int i,j,k,cnt,row=0,col=j;
+  
 }
 
 // Expand: generate successors of the current node
@@ -166,44 +179,62 @@ struct node *expand(struct node *cp) {
 /* attach in the beginning */
 struct node *prepend(struct node *tp,struct node *sp) {
   //.....
-  struct node *tmp = tp;
-  tp = sp;
-  sp = tmp;
+  struct node *tmp = sp;
+  sp = tp;
+  tp = tmp->next;
   return sp;
 }
 
 /* attach at the end */
 struct node *append(struct node *tp,struct node *sp) {
-  struct node *cp;
-  cp->next=NULL;
-  while(cp)
-    cp = cp->next;
-  cp->next = sp;
+  while(tp)
+    tp = tp->next;
+  tp->next = sp;
   return sp;
 }
 
 void swap(struct node *cp,int i,int j,int k,int l){
   int tmp;
-  //.....
+  tmp = cp->board[i][j];
+  cp->board[i][j] = cp->board[k][l];
+  cp->board[k][l] = tmp;
 }
 
 struct node *move(struct node *cp,int a,int b,int x,int y,int dir) {
   struct node *newp;
   newp->next=NULL;
   int i,j,k,l,tmp;
-  // malloc
+  //malloc
+  newp = malloc(sizeof(struct node));
   // copy from cp
-  // swap two vals
+  for (i=0; i<N; i++){
+    for (j=0; j<N; j++){
+      newp->board[i][j] = cp->board[i][j];
+    }
+  }
+  // swap two vals: a,b > from, x,y > to
+  swap(newp, a, b, x, y);
   // compute f,g,h
+  cp->board[N][0]++; // increment f
+  //cp->board[N][1]++; // increment g
+  // board[N][2] = h
   // insert the direction that resulted in this node, used for printing path
+  cp->board[N][3] = dir;
   return newp;
 }
 
 struct node *goal_found(struct node *cp,struct node *gp){
   int flg=FALSE;
   // check if succ list has goal
+  while (cp){
+    if(nodes_same(cp,gp)){
+      return cp;
+    }
+    cp=cp->next;
+
+  }
   // if found, return that for finding path else return NULL
-  return cp;
+  return NULL;
 }
 
 int count(struct node *cp) {
@@ -219,10 +250,12 @@ int count(struct node *cp) {
 struct node *merge(struct node *succ,struct node *open,int flg) {
   struct node *csucc,*copen, *cp;
 
-  if (flg==DFS) {	/* attach in the front: succ -> ... -> open */
-    copen = open;
-    open = succ;
-    succ = copen->next;
+  if (flg==DFS) { /* attach in the front: succ -> ... -> open */
+    cp=succ;
+    while (cp){
+      prepend(cp,open);
+
+    }
     
   }else if (flg==BFS) {	  /* attach at the end: open -> ... -> succ */
     cp = open;
@@ -244,15 +277,31 @@ struct node *merge(struct node *succ,struct node *open,int flg) {
  */
 struct node *insert_node(struct node *succ,struct node *open,int x) {
    int cnt;
-   struct node *copen,*topen;
-   //...
-   
+   struct node *copen,*topen, *csucc, *tmp, *prev;
+   copen = open;
+   csucc = succ;
+   while (csucc){
+     // boudry condition: first one is less
+     if (csucc->board[N][x] < copen->board[N][x]){
+       
+     }
+     while (copen){
+       prev = copen;
+       if (csucc->board[N][x] < copen->board[N][x]){
+	 tmp = copen;
+	 csucc->next = copen;
+	 
+       }
+     }
+
+   }
    return open;
 }
 
 int find_h(int current[N+1][N],int goalp[N+1][N]) {
   int h=0,i,j,k,l,done;
   // ...
+  
   return h;
 }
 
@@ -285,8 +334,7 @@ struct node *filter(struct node *succ,struct node *hp){
     while(cp && !nodes_same(rsp, cp)){
       lsp=rsp;
       cp=cp->next;
-       
-
+      
     }
     if(cp){
       /* same, so delete cp */
