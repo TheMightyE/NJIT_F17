@@ -1,0 +1,3 @@
+Use 'make all' to compile. An executable called 'dotprod' will be made. As an example, use the following command to run:
+	mpirun -np 4 ./dotproduct
+

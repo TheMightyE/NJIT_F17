@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <mpi.h>
+#include <unistd.h>
+#include <math.h>
+#include <time.h>
+#include <stdlib.h>
+
+#define N 8
+#define MASTER 0
+#define MAXPROCS 16
+
+int matrix_multiplier();
+void prnt_lst();
+void init_lst_zero();
+void init_lst();
+
+
+int main(int argc, int *argv){
+  int i, j, k, n;
+  if (argv[1])
+    n = atoi(argv[1]);
+  else
+    n = N;
+  
+  int  vect_x[n], vect_y[n], vect_z[n];
+  init_lst(vect_x, n);
+  init_lst(vect_y, n);
+  init_lst_zero(vect_z, n);
+
+
+  return 0;
+}
+
+void init_lst_zero(int *m, int n){
+  int i, j;
+
+  for (i=0; i<n; i++){
+    for(j=0; j<n; j++){
+      m[i][j] = 0;
+    }
+  }
+}
+
+void init_lst(int *m, int n){
+  int i, j, k=0;
+  for (i=0; i<n; i++){
+    for(j=0; j<n; j++){
+      m[i][j] = k++;
+    }
+  }
+}

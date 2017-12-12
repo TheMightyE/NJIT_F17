@@ -201,23 +201,37 @@ void swap(struct node *cp,int i,int j,int k,int l){
 }
 
 struct node *move(struct node *cp,int a,int b,int x,int y,int dir) {
-  struct node *newp;
-  newp->next=NULL;
-  int i,j,k,l,tmp;
+  struct node *newp, *tp;
+  int i,j,k,l,tmp=0;
   //malloc
   newp = malloc(sizeof(struct node));
+  tp = malloc(sizeof(struct node));
+  newp->next = NULL;
+  tp->next = NULL;
   // copy from cp
   for (i=0; i<N; i++){
     for (j=0; j<N; j++){
       newp->board[i][j] = cp->board[i][j];
     }
   }
-  // swap two vals: a,b > from, x,y > to
+  // swap two vals: a,b > from; x,y > to
   swap(newp, a, b, x, y);
   // compute f,g,h
-  cp->board[N][0]++; // increment f
-  //cp->board[N][1]++; // increment g
-  // board[N][2] = h
+  newp->board[N][1]++; // increment g
+  // compute h
+  for (i=0; i<N; i++){
+    for (j=0; j<N; j++){
+      for (k=0; k<N; k++){
+	for (l=0; l<N; l++){
+	  if (newp->board[i][j] == goal->board[k][l]){
+	    tmp = (l-j)/(k-i);
+	  }
+	  tp->board[i][j] = tmp;
+	}
+      }
+    }
+  }
+  print_a_node(newp);
   // insert the direction that resulted in this node, used for printing path
   cp->board[N][3] = dir;
   return newp;
@@ -248,25 +262,27 @@ int count(struct node *cp) {
 }
 
 struct node *merge(struct node *succ,struct node *open,int flg) {
-  struct node *csucc,*copen, *cp;
-
+  struct node *csucc,*copen;
+ 
   if (flg==DFS) { /* attach in the front: succ -> ... -> open */
-    cp=succ;
-    while (cp){
-      prepend(cp,open);
+    csucc=succ;
+    while (csucc){
+      prepend(csucc,open);
 
     }
     
   }else if (flg==BFS) {	  /* attach at the end: open -> ... -> succ */
-    cp = open;
-    while (cp)
-      cp = cp->next;
-    cp = succ;
+    copen = open;
+    while (copen)
+      copen = copen->next;
+    copen = succ;
     
   }else if (flg==BEST) {	/* Best first: sort on h value */
-    //...
+    // merge on h value
+    open = insert_node(succ, open, 2);
   }else{			/* A* search: sort on f=g+h value */
-    //...
+    // merge on f value
+    open = insert_node(succ, open, 0);
   }
   return open;
 }
@@ -276,22 +292,35 @@ struct node *merge(struct node *succ,struct node *open,int flg) {
    index: 0=f,1=g,h=2 of board[N][x]
  */
 struct node *insert_node(struct node *succ,struct node *open,int x) {
-   int cnt;
-   struct node *copen,*topen, *csucc, *tmp, *prev;
+  int cnt, i, j;
+   struct node *copen,*topen, *csucc, *tmp, *newp;
+   newp = malloc(sizeof(struct node));
+   newp->next = NULL;
    copen = open;
    csucc = succ;
    while (csucc){
-     // boudry condition: first one is less
+     // boudry condition: first succ is less
      if (csucc->board[N][x] < copen->board[N][x]){
-       
-     }
-     while (copen){
-       prev = copen;
-       if (csucc->board[N][x] < copen->board[N][x]){
-	 tmp = copen;
-	 csucc->next = copen;
-	 
+       for (i=0; i<N; i++){
+	 for (j=0; j<N; j++){
+	   newp->board[i][j] = csucc->board[i][j];
+	 }
        }
+       newp->next = copen;
+       copen = newp;
+     }
+     while (copen->next){
+       if (csucc->board[N][x] < copen->next->board[N][x]){
+	 for (i=0; i<N; i++){
+	   for (j=0; j<N; j++){
+	     newp->board[i][j] = csucc->board[i][j];
+	   }
+	 }
+	 tmp = copen->next;
+	 copen = newp;
+	 newp->next = tmp;
+       }
+       csucc->next = copen;
      }
 
    }
