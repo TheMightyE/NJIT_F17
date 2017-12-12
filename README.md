@@ -1,3 +1,0 @@
-# NJIT_F17
-# NJIT_F17
-# NJIT_F17
