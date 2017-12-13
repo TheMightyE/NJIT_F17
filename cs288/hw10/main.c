@@ -9,7 +9,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define NELMS 1000000
+#define NELMS 100000
 #define MASTER 0
 #define MAXPROCS 16
 
@@ -90,7 +90,7 @@ void init_lst(int *l,int n){
   for (i=0; i<n; i++){
     if (j>10)
       j=1;
-    *l++ = j++;
+    *l++ = i;
   }
 }
 void print_lst(int s,int e, int *l){

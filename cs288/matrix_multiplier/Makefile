@@ -1,4 +1,4 @@
 all: mm.c
-        mpicc main.c -o mm
+	mpicc mm.c -o mm
 clean:
-        rm -f mm *~ core $(INCDIR)/*~
+	rm -f mm *~ core $(INCDIR)/*~

@@ -9,7 +9,7 @@
 #define MASTER 0
 #define MAXPROCS 16
 
-int matrix_multiplier();
+void matrix_multiplier();
 void prnt_lst();
 void init_lst_zero();
 void init_lst();
@@ -17,7 +17,7 @@ void init_lst();
 int n;
 
 int main(int argc, char **argv){
-  int i, j, k, pid, nprocs, srow, erow, portion;
+  int i, j, k, pid, nprocs, srow, erow, portion, tag=0;
   double stime, etime;
   MPI_Status status;
   MPI_Comm world;
@@ -32,7 +32,7 @@ int main(int argc, char **argv){
   init_lst(vect_x);
   init_lst(vect_y);
   init_lst_zero(vect_z, n);
-  prnt_lst(vect_y);
+  //prnt_lst(vect_y);
 
   MPI_Init(&argc, &argv);
   world = MPI_COMM_WORLD;
@@ -43,16 +43,38 @@ int main(int argc, char **argv){
   srow = pid*portion;
   erow = srow+portion;
 
-  printf("pid=%d\tsrow=%d\terow=%d\n", pid, srow, erow);
-
+  stime = MPI_Wtime();
+  matrix_multiplier(vect_x, vect_y, vect_z, srow, erow);
+  etime = MPI_Wtime();
+  
+  printf("pid %d: Elapsed=%f\n",pid,etime-stime);
+  int nelms = portion*n;
+  
   if (pid == MASTER){
-    for (i=1; i<nprocs; i++)
-      MPI_Recv(&vect_z[i*portion], portion, MPI_INT, i, 123, world, &status);
+    //MPI_Gather(&vect_z[nelms*portion], nelms, MPI_INT, vect_z, nelms, MPI_INT, MASTER, world);
+    for (i=1; i<nprocs; i++){
+      MPI_Recv(vect_z+i*portion, nelms, MPI_INT, i, tag, world, &status);
+      
+    }
+    //printf("pid 0: Elapsed=%f\n",etime-stime);
+    //prnt_lst(vect_z);
   }else{
-    // MPI_Send();
+    // MPI_Scatter(vect_x, nelms, MPI_INT, vect_x+nelms*pid, nelms, MPI_INT, MASTER, world);
+    MPI_Send(vect_z+srow, nelms, MPI_INT, MASTER, tag, world);
+  }
+  return 0;
+}
+
+void matrix_multiplier(int x[n][n], int y[n][n], int z[n][n], int srow, int erow){
+  int i=0, j=0, k=0;
+  for (i=srow; i<erow; i++){
+    for (j=0; j<n; j++){ 
+      for (k=0; k<n; k++){
+	z[i][j] = z[i][j]+x[i][k]*y[k][j];
+      }
+    }
   }
 
-  return 0;
 }
 
 void init_lst_zero(int m[n][n], int n){
@@ -77,8 +99,9 @@ void prnt_lst(int m[n][n]){
   int i, j;
   for (i=0; i<n; i++){
     for(j=0; j<n; j++){
-      printf("%2d ", m[i][j]);
+      printf("%7d ", m[i][j]);
     }
     printf("\n");
   }
+  printf("\n");
 }
