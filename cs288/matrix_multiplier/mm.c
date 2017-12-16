@@ -62,6 +62,7 @@ int main(int argc, char **argv){
     // MPI_Scatter(vect_x, nelms, MPI_INT, vect_x+nelms*pid, nelms, MPI_INT, MASTER, world);
     MPI_Send(vect_z+srow, nelms, MPI_INT, MASTER, tag, world);
   }
+  MPI_Finalize();
   return 0;
 }
 
@@ -103,5 +104,4 @@ void prnt_lst(int m[n][n]){
     }
     printf("\n");
   }
-  printf("\n");
 }

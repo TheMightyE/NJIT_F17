@@ -59,7 +59,7 @@ function get_user(){
     for ((i=0; i<${#b[@]}; i++)); do
 	users+=("${b[i]//</}")
     done
-     
+    echo "${users[@]}"
 }
 
 function concat_results(){
