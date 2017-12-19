@@ -108,12 +108,8 @@ int main(int argc,char **argv) {
   elapsed_msec = del_sec + ((et.tv_usec - st.tv_usec)/1000000.0);
   printf("%.4f sec\n", elapsed_msec);
   
-  //print_nodes(open,"open");
-  
   printf("%d: open=%d + clsd=%d = total=%d\n",iter,ocnt,ccnt,ocnt+ccnt);
   printf("%s strategy: %d iterations %d nodes\n",strategy_s,iter,total);
-  //find_path(cp,open,closed);
-  //printf("copen:%d\n",count(succ));
   return 0;
 } /* end of main */
 
