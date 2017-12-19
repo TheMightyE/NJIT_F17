@@ -80,8 +80,6 @@ struct clip *append(struct clip **hp,char **four) {
    // malloc tp   
    tp = malloc(sizeof(struct clip));
    tp->next = NULL;
-   
-    
    /* 
       malloc for four strings.
       set views using atoi(four[2])
@@ -91,7 +89,6 @@ struct clip *append(struct clip **hp,char **four) {
    tp->views = atoi(four[2]);
    tp->title = four[3];
    //printf("user: %s\ntitle: %s\nviews: %d\ntime: %s\n\n\n", tp->user, tp->title, tp->views, tp->duration);
-
    // use cp to traverse the list
   if(cp){
     /*

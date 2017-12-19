@@ -9,7 +9,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define NELMS 100000
+#define NELMS 16
 #define MASTER 0
 #define MAXPROCS 16
 
@@ -18,8 +18,8 @@ void init_lst();
 void print_lst();
 
 int main(int argc, char **argv) {
-  int i,n,vector_x[NELMS],vector_y[NELMS];
-  int prod=0,tmp_prod=0,sidx,eidx,size,portion;
+  int i,n,vector_x[NELMS],vector_y[NELMS],*tmp_prods;
+  int prod=0,sidx,eidx,size,portion;
   int pid,nprocs;
   double stime,etime;
   MPI_Status status;
@@ -33,47 +33,48 @@ int main(int argc, char **argv) {
     printf("n=%d > N=%d\n",n,NELMS);
     exit(1);
   }
-  
-  init_lst(vector_x, n);
-  init_lst(vector_y, n);
-  
+  //printf("pid %d\n",pid);
   MPI_Init(&argc, &argv);
   world = MPI_COMM_WORLD;
   MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
-  
-  if (nprocs > MAXPROCS){
-    printf("MAXPROCS=%d You entered %d\n", MAXPROCS, nprocs);
-    exit(1);
- } 
-  
   MPI_Comm_rank(MPI_COMM_WORLD, &pid);
+  
+  if(pid==MASTER){
+    init_lst(vector_x, n);
+    init_lst(vector_y, n);
+  }
   
   portion = n/nprocs;
   sidx = pid*portion;
   eidx = sidx+portion;
   
+  MPI_Scatter(vector_x,portion,MPI_INT,&vector_x+sidx,portion,MPI_INT,MASTER,world);
+  MPI_Scatter(vector_y,portion,MPI_INT,&vector_y+sidx,portion,MPI_INT,MASTER,world);
+  
+  printf("pid:%d\n",pid);
+  print_lst(sidx,eidx,vector_x);
   
   stime = MPI_Wtime();
-  prod = dot_product(sidx, eidx, vector_x, vector_y);  
-  etime = MPI_Wtime();
-
+  prod = dot_product(sidx, eidx, vector_x, vector_y);
+  
+  printf("pid %d sent temporary product = %d\n", pid, prod);
   //printf("pid %d s=%d\te=%d\n", pid, sidx, eidx);
+  if (pid == MASTER){
+    tmp_prods = (int *)malloc(sizeof(int)*nprocs);
+  }
+  
+  MPI_Gather(&tmp_prods,1,MPI_INT,&prod,1,MPI_INT,MASTER,world);
   
   if (pid == MASTER) {
-    for (i=1; i<nprocs; i++){
-      MPI_Recv(&tmp_prod, 1, MPI_INT, i, 123, world, &status);
-      prod += tmp_prod;
-      //MPI_Gather(&prod,1,MPI_INT,&tmp_prod,1,MPI_INT,MASTER,world);
+    for (i=0; i<nprocs;i++){
+      prod += tmp_prods[i];
     }
-    // prod = tmp..
+    
+    etime = MPI_Wtime();
     printf("->pid=%d: final prod= %d\n",pid,prod);
     printf("->pid=%d: elapsed=%f\n",pid,etime-stime);
-  }else{
-    MPI_Send(&prod, 1, MPI_INT, MASTER, 123, world);
-    // MPI_Scatter(vector_x,portion,MPI_INT,vector_x+sidx,portion,MPI_INT,MASTER,world);
-    // MPI_Scatter(vector_y,portion,MPI_INT,vector_y+sidx,portion,MPI_INT,MASTER,world);
-    printf("pid %d sent temporary product = %d\n", pid, prod);
   }
+  //printf("pid %d sent temporary product = %d\n", pid, prod);
   MPI_Finalize();
 }
 
@@ -90,13 +91,13 @@ void init_lst(int *l,int n){
   for (i=0; i<n; i++){
     if (j>10)
       j=1;
-    *l++ = i;
+    *l++ = 1;
   }
 }
 void print_lst(int s,int e, int *l){
   int i;
   for (i=s; i<e; i++) {
-    printf("%x ",l[i]);
+    printf("%2d ",l[i]);
   }
   printf("\n");
 }

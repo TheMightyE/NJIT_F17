@@ -41,6 +41,7 @@ def get_text(e):
 
 def prettyfy_txt_lst(lst):
    l=[]
+   l3=[]
    for i in lst:
       l2=[]
       # get number as int
@@ -75,9 +76,11 @@ def prettyfy_txt_lst(lst):
       l2.append(price)
       l2.append(chnge)
       l2.append(percnt_chnge)
-      
       l.append(l2)
-      
+
+   l3 = (filter(lambda x: x[4]<10, l))
+   for i in l3:
+      print(i)
    return l
 
 # replace whitespace chars
@@ -104,7 +107,7 @@ def extract_values(dm):
    #l = get_elms_for_atr_val('table','class','most_actives')
    l = get_elms_for_atr_val('tr','class','most_actives')
    final_lst=[]
-
+   
    # skip the first element because its the column titles
    for i in l[1:]:
       lst = get_text(i)

@@ -32,46 +32,55 @@ int main(int argc, char **argv){
 
   init();		   /* initalize a, x0 and b - DO not change */
   n_iter = jacobi();
-  if (n_iter <= MAX_ITER)
-    printf("Converges in %x iterations\n", n_iter);
-  else
-    printf("Does not converge in %d iterations\n", MAX_ITER);
-  
+
   return 0;
 }
 
 int jacobi(){
   int i,j,k;
   float sum;
-  // ...
-  k = 0;
-  while (!convergence(k) && k<MAX_ITER){
-    for (i=0; i<n; i++){
-      sum=0;
-      for (j=0; j<n; j++){
-	if (i!=j){
-	  sum = sum + a[i][j] * x[j];
-	}
-      }
-      buf[i] = (b[i]-sum)/a[i][i];
-    }
-    k++;
-  }
   
+	int count=0;
+	do{
+		for(i=0; i<n; i++){
+			sum=0;
+			
+			for(j=0; j<0; j++){
+				if(i != j){
+					sum = sum + a[i][j] * x[j];
+				}
+			}
+			buf[i]=(b[i] - sum)/a[i][i];
+		}
+		for(i=0; i<n; i++){
+			x[i] = buf[i];
+		}
+		k++;
+	}while(!convergence(k));
+
+	printf("K: %i\n", k);
+	printf("Solution: ");
+	for(i=0; i<n; i++){
+		printf("%f ",buf[i]);
+	}
+	printf("\n");
   return k;
 }
 
 // returns 1 if converged else 0
 int convergence(int iter){
   int i,j,k,flag=1;
-  for (i=0; i<n; i++){
-    k=0;
-    for (j=0; j<n; j++){
-      k = k + a[i][j]*x[j];
-      if (k-b[j] > error)
-	flag = 0;
-    }
-  }
+	float sum;
+
+	for(i=0; i<n; i++){
+		sum=0;
+		for(j=0; j<0; j++){
+			sum = sum + a[i][j] * x[j];
+		}		
+	}
+	if(sum-buf[i]>error)
+		return 0;
+
   return flag;
 }
 
