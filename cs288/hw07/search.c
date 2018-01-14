@@ -62,7 +62,7 @@ int main(int argc,char **argv) {
   int perm;		/* perm=odd=no solution, perm=even=solvable */
   struct node *cp,*open,*closed,*succ,*tp;
   long int del_sec; 
-  double elapsed_msec;
+  double elapsed_sec;
   struct timeval st, et;
   
   open=closed=succ=NULL;
@@ -80,18 +80,16 @@ int main(int argc,char **argv) {
   
   gettimeofday(&st, NULL);
   while (open) {
-    if (iter==1){
-      //print_nodes(open, "open");
-      //break;
-    }
-    ocnt=count(open);
-    ccnt=count(closed);
+    /*if (iter==10){
+      print_nodes(open, "open");
+      break;
+      }*/
     cp=open; open=open->next; cp->next=NULL; /* get the first node from open */
     succ = expand(cp);
     succ = filter(succ,open);		     /* New succ list */
     succ = filter(succ,closed);		     /* New succ list */
-    //cnt=count(succ);
-    //total=total+cnt;
+    cnt=count(succ);
+    total=total+cnt;
     
     if (succ) open=merge(succ,open,strategy); // New open list
     closed=append(cp,closed);		      // New closed
@@ -105,11 +103,16 @@ int main(int argc,char **argv) {
   gettimeofday(&et, NULL);
   
   del_sec = et.tv_sec-st.tv_sec;
-  elapsed_msec = del_sec + ((et.tv_usec - st.tv_usec)/1000000.0);
-  printf("%.4f sec\n", elapsed_msec);
-  
-  printf("%d: open=%d + clsd=%d = total=%d\n",iter,ocnt,ccnt,ocnt+ccnt);
-  printf("%s strategy: %d iterations %d nodes\n",strategy_s,iter,total);
+  elapsed_sec = del_sec + ((et.tv_usec - st.tv_usec)/1000000.0);
+  if (elapsed_sec > 60)
+    printf("Took: %.4f min\n", elapsed_sec/60);
+  else
+    printf("Took: %.4f secs\n", elapsed_sec);
+
+  ocnt=count(open);
+  ccnt=count(closed);
+  printf("%d: open=%d + clsd=%d = total nodes=%d\n",iter+1,ocnt,ccnt,total);
+  printf("%s strategy: %d iterations\n",strategy_s,iter+1);
   return 0;
 } /* end of main */
 
@@ -208,7 +211,7 @@ struct node *expand(struct node *cp) {
 /* attach in the beginning */
 struct node *prepend(struct node *tp,struct node *sp) {
   //.....
-  struct node *tmp = sp->next;
+  struct node *tmp = sp;
   sp = tp;
   tp->next = tmp;
   return sp;
@@ -236,21 +239,21 @@ void swap(struct node *cp,int i,int j,int k,int l){
   cp->board[k][l] = tmp;
 }
 
+// Move from a,b to x,y
 struct node *move(struct node *cp,int a,int b,int x,int y,int dir) {
-  struct node *newp, *tp;
+  struct node *newp;
   int i,j,k,l,distance,m,n,tmp=0;
   //malloc
   newp = malloc(sizeof(struct node));
-  tp = malloc(sizeof(struct node));
   newp->next = NULL;
-  tp->next = NULL;
+  
   // copy from cp
   for (i=0; i<N; i++){
     for (j=0; j<N; j++){
       newp->board[i][j] = cp->board[i][j];
     }
   }
-  // swap two vals: a,b > from; x,y > to
+  // swap two vals: from a,b > to x,y
   swap(newp, a, b, x, y);
   // compute f,g,h
   // compute h with the distance formula
@@ -294,20 +297,19 @@ int count(struct node *cp) {
 struct node *merge(struct node *succ,struct node *open,int flg) {
   struct node *csucc,*copen;
   csucc = succ;
-  copen = open;
  
   if (flg==DFS) { /* attach in the front: succ -> ... -> open */
-    csucc=succ;
     while (csucc){
-      prepend(csucc,open);
+      open = prepend(csucc,open);
+      csucc = csucc->next;
 
     }
     
   }else if (flg==BFS) {	  /* attach at the end: open -> ... -> succ */
-    copen = open;
-    while (copen)
-      copen = copen->next;
-    copen = succ;
+    while (csucc){
+      open = append(csucc,open);
+      csucc = csucc->next;
+    }
     
   }else if (flg==BEST) {	/* Best first: sort on h value */
     // merge on h value
@@ -383,32 +385,6 @@ int find_h(struct node *current,struct node *goalp) {
       }
     }
   }
-  /*
-  printf("\ncurr\n");
-  print_a_node(current);
-  printf("\ntp hvals\n");
-  print_a_node(tp);
-  */
-  /*
-  for (i=0; i<N; i++){ //x1
-    for (j=0; j<N; j++){//y1
-      for (k=0; k<N; k++){//x2
-	for (l=0; l<N; l++){//y2
-	  if (current->board[i][j] == goalp->board[k][l]){
-	    x = pow(l-j,2);
-	    y = pow(k-i,2);
-	    distance = sqrt(x) + sqrt(y);
-	    if(x>0)
-	      distance = y/x;
-	    if (distance>=0)
-	      tp->board[i][j] = distance;
-	    
-	  }
-	}
-      }
-    }
-  }
-  */
   /* Add up all of the h values that were computed for each digit on the board */
   for (i=0; i<N; i++){
     for (j=0; j<N; j++){
@@ -435,31 +411,40 @@ int nodes_same(struct node *xp,struct node *yp) {
 }
 struct node *filter2(struct node *succ,struct node *hp){
   int i,j,flg=0;
-  struct node *copen, *csucc, *new_succ, *tp;
+  struct node *cp, *csucc, *new_succ, *tp;
   tp = (struct node *)malloc(sizeof(struct node));
   tp->next = NULL;
-  copen = hp;
   
   while (csucc){
-    copen = hp;
-    while (copen){
-      if (nodes_same(csucc, copen)){
+    cp = hp;
+    printf("in suc loop\n");
+    while (cp){
+    printf("in open loop\n");
+      if (nodes_same(csucc, cp)){
+	printf("nodes same\n");
 	flg=1;
 	break;
       }
       else
-	copen = copen->next;
+	cp = cp->next;
     }
+    printf("flg:%d\n",flg);
+    
     if (flg){
+    printf("copying\n");
       for (i=0; i<N+1; i++){
 	for (j=0; j<N; j++){
 	  tp->board[i][j] = csucc->board[i][j];
 	}
       }
+      printf("appending to new_succ\n");
       new_succ = append(tp, new_succ);
-
+      printf("appended to new_succ\n");
+      
     }
-    csucc = csucc->next;
+    printf("next\n");
+
+    csucc = csucc->next;    
   }
   print_nodes(new_succ, "ns");
   
@@ -472,6 +457,7 @@ struct node *filter(struct node *succ,struct node *hp){
   struct node *lsp,*rsp,*cp;	/* lsp=left succ p, rsp=right succ p */
   struct node *tp;		/* temp ptr */
   lsp=rsp=succ;
+  
   while(rsp){
     cp=hp;
     while(cp && !nodes_same(rsp, cp)){
@@ -483,7 +469,6 @@ struct node *filter(struct node *succ,struct node *hp){
       /* same, so delete cp */
       if (lsp==rsp){ // first one is same
 	succ = succ->next;
-	//lsp=cp->next;
 	lsp=rsp=succ;
       }else{
 	lsp->next=rsp->next;
